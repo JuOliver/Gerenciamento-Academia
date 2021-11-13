@@ -1,6 +1,14 @@
-<div class="card">
+<div class="card" *ngIf="card" >
     <h2>Nome: {{aluno?.nome}}</h2>
     <h2>Mensalidade: {{aluno?.valorMensalidade | currency: 'BRL'}}</h2>
     <h2>Data último Pagamento: {{aluno?.dataUltimoPgto | date}}</h2>
-    <h2>Data Inclusão no sistema: {{aluno?.dataInclusaoSistema |date}}</h2>
+    <button (click)="memberDetails()">Detalhes</button>
+</div>
+
+<div *ngIf="!card">
+    <h2>Detalhes do Aluno</h2>
+    <h3>Nome: {{aluno?.nome}}</h3>
+    <h3>Mensalidade: {{aluno?.valorMensalidade | currency: 'BRL'}}</h3>
+    <h3>Data último Pagamento: {{aluno?.dataUltimoPgto | date}}</h3>
+    <h3>Data Inclusão no sistema: {{aluno?.dataInclusaoSistema |date}}</h3>
 </div>

@@ -1,2 +1,4 @@
 <h1>Lista de alunos</h1>
-<app-aluno *ngFor="let item of alunos" [aluno]="item"></app-aluno>
+<input type="text"  placeholder="Digite um nome" (keyup)="searchByNome($event)">
+<input type="number" placeholder="Digite um id" (keyup)="searchById($event)">
+<app-aluno *ngFor="let item of filteredAlunos" [aluno]="item" [card]="true"></app-aluno>

@@ -5,6 +5,7 @@ import { AlunosListComponent } from './components/alunos-list/alunos-list.compon
 import { AlunoPageComponent } from './pages/aluno-page/aluno-page.component';
 import { SharedModule } from 'src/app/shared/shared.module';
 import { AlunoDetailsComponent } from './pages/aluno-details/aluno-details.component';
+import { CadastroAlunoComponent } from './pages/cadastro-aluno/cadastro-aluno.component';
 
 
 
@@ -13,7 +14,8 @@ import { AlunoDetailsComponent } from './pages/aluno-details/aluno-details.compo
     AlunoComponent,
     AlunosListComponent,
     AlunoPageComponent,
-    AlunoDetailsComponent
+    AlunoDetailsComponent,
+    CadastroAlunoComponent
   ],
   imports: [
     CommonModule,

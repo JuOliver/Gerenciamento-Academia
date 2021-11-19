@@ -4,4 +4,6 @@ export interface Aluno{
     valorMensalidade: number;
     dataUltimoPgto: string | Date;
     dataInclusaoSistema: string | Date;
+    email: string;
+    senha: string;
 }

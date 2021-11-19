@@ -1,0 +1,44 @@
+app-footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.login-container {
+    position: absolute;
+    width: 450px;
+    height: 450px;
+    background-color: #EDEDED;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 4px;
+    box-shadow: 0 4px 8px 0;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    h3 {
+        font-weight: 500;
+    }
+}
+.login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    .form-field{
+        width: 100%;
+        input{
+            width: 250px;
+            height: 50px;
+            font-size: 20px;
+        }
+    }
+    button{
+        width: 250px;
+        height: 35px;
+    }
+}

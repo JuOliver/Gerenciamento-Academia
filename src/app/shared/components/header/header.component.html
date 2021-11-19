@@ -1,7 +1,9 @@
 <nav>
     <ul class="pointer">
-        <li [routerLink]="['/alunos']">Lista de alunos</li>
-        <li [routerLink]="['/login']">Login</li>
-        <li [routerLink]="['/cadastro']">Cadastro</li>
+        <li [routerLink]="['/alunos']" *ngIf="aluno">Lista de alunos</li>
+        <li [routerLink]="['/cadastro-aluno']" *ngIf="aluno">Adicionar Aluno</li>
+        <li [routerLink]="['/login']" *ngIf="!aluno">Login</li>
+        <li [routerLink]="['/cadastro']" *ngIf="!aluno">Cadastro</li>
+        <li (click)="exit()" *ngIf="aluno">Sair</li>
     </ul>
 </nav>

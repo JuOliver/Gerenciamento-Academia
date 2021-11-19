@@ -6,10 +6,8 @@
         <input type="text" [(ngModel)]="email" placeholder="Digite o seu e-mail">
     </div>
     <div class="form-field">
-        <input type="text" [(ngModel)]="senha" placeholder="Digite sua senha">
+        <input type="password" [(ngModel)]="senha" placeholder="Digite sua senha">
     </div>
     <p class="error" *ngIf="erro">Usuário/senha inválidos! </p>
     <button [disabled]="!email || !senha" (click)="authentication()">Enviar</button>
-    {{email}}
-    {{senha}}
 </div>

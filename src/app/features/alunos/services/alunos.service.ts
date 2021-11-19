@@ -69,4 +69,8 @@ export class AlunosService {
     return (this.alunos[(this.alunos.length -1)].id +1);
   }
 
+  createAluno(aluno : Aluno){
+    this.alunos.push(aluno);
+  }
+
 }

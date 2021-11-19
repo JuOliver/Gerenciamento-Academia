@@ -6,6 +6,7 @@ import { AlunoPageComponent } from './pages/aluno-page/aluno-page.component';
 import { SharedModule } from 'src/app/shared/shared.module';
 import { AlunoDetailsComponent } from './pages/aluno-details/aluno-details.component';
 import { CadastroAlunoComponent } from './pages/cadastro-aluno/cadastro-aluno.component';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -19,7 +20,8 @@ import { CadastroAlunoComponent } from './pages/cadastro-aluno/cadastro-aluno.co
   ],
   imports: [
     CommonModule,
-    SharedModule
+    SharedModule,
+    FormsModule
   ],
   exports: [
     AlunosListComponent,
